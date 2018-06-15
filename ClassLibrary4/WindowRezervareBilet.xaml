@@ -1,0 +1,31 @@
+﻿<Window x:Class="AvionInterfata.WindowRezervareBilet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AvionInterfata"
+        mc:Ignorable="d"
+        Title="WindowRezervareBilet" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}">
+        <Button x:Name="btnAdaug" Content="Adaugare" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" Width="75" Click="btnAdaug_Click" FontWeight="Bold"/>
+        <Button x:Name="btnSterg" Content="Stergere" HorizontalAlignment="Left" Margin="31,52,0,0" VerticalAlignment="Top" Width="75" Click="btnSterg_Click" FontWeight="Bold"/>
+        <Button x:Name="btnModific" Content="Modificare" HorizontalAlignment="Left" Margin="31,94,0,0" VerticalAlignment="Top" Width="75" Click="btnModific_Click" FontWeight="Bold"/>
+        <Button x:Name="btnAfiseaza" Content="Afisare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="31,143,0,0" Click="btnAfiseaza_Click" FontWeight="Bold"/>
+        <ListBox x:Name="lbRezervareBilet" HorizontalAlignment="Left" Height="149" Margin="145,14,0,0" VerticalAlignment="Top" Width="599" ContextMenuClosing="lbRezervareBilet_ContextMenuClosing"/>
+        <Label Content="Cod" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,206,0,0" Height="27" Width="80" FontStyle="Italic"/>
+        <Label Content="Clasa" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,238,0,0" Height="26" Width="75" FontStyle="Italic"/>
+        <Label Content="Data Sosire" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,271,0,0" Height="27" Width="75" FontStyle="Italic"/>
+        <Label Content="Data Plecare" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,303,0,0" Height="29" Width="75" FontStyle="Italic"/>
+        <Label Content="Destinatie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,337,0,0" Height="25" Width="75" FontStyle="Italic"/>
+        <Label Content="Tarif" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,367,0,0" Height="25" Width="75" FontStyle="Italic"/>
+        <TextBox x:Name="txtCodRezervare" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="187,206,0,0"/>
+        <TextBox x:Name="txtClasa" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="187,242,0,0"/>
+        <TextBox x:Name="txtDestinatie" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="187,337,0,0"/>
+        <TextBox x:Name="txtTarif" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="187,366,0,0"/>
+        <Label Content="IDPasager" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,392,0,0" Height="25" Width="80" FontStyle="Italic"/>
+        <TextBox x:Name="txtIDPasager" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="187,394,0,0"/>
+        <DatePicker x:Name="dpDataSosire" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,274,0,0" Width="120"/>
+        <DatePicker x:Name="dpDataPlecare" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,304,0,0" Width="120"/>
+        <TextBox x:Name="txtSters" HorizontalAlignment="Left" Height="181" Margin="327,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331"/>
+    </Grid>
+</Window>
